@@ -54,6 +54,7 @@ void Turtle::pen(bool up_down) {
 Turtle* tur = new Turtle();
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(0.0,0.0,0.0);
     tur->init(0.0, 0.0, 0);
     tur->pen(true);
     tur->forward(50);
@@ -79,16 +80,14 @@ void myReshape(int w, int h) {
 
 int main(int argc, char ** argv) {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(500,500);
-    glutInitWindowPosition(0, 0);
+//    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+//    glutInitWindowSize(500,500);
+//    glutInitWindowPosition(0, 0);
     glutCreateWindow("Xcode Glut Demo");
     glutReshapeFunc(myReshape);
     glutDisplayFunc(display);
-    glutMainLoop();
     glClearColor(1.0, 1.0, 1.0, 1.0);
-    glColor3f(0.0,0.0,0.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glutMainLoop();
     
 //    glMatrixMode(GL_PROJECTION);
 //    glLoadIdentity();
