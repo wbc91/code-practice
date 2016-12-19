@@ -21,7 +21,7 @@ void Turtle::forward(double distance) {
 //        glClear(GL_COLOR_BUFFER_BIT);
         glBegin(GL_LINES);
         glVertex2f(m_startx, m_starty);
-        glVertex2f(m_startx+distance*cos(m_theta), m_starty+distance*sin(m_theta));
+        glVertex2f(m_startx+distance*cos(m_theta*c), m_starty+distance*sin(m_theta*c));
         glEnd();
         glFlush();
     }
@@ -88,13 +88,13 @@ int main(int argc, char ** argv) {
     glutDisplayFunc(display);
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glutMainLoop();
-    
-//    glMatrixMode(GL_PROJECTION);
-//    glLoadIdentity();
-//    gluOrtho2D(0.0, 50.0, 0.0, 50.0);
-//    glMatrixMode(GL_MODELVIEW);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0.0, 50.0, 0.0, 50.0);
+    glMatrixMode(GL_MODELVIEW);
 
     return 0;
-    
+
 }
 
