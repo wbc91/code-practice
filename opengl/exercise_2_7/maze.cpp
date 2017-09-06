@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <GLUT/GLUT.h>
+#include <GLUT/glut.h>
 
 void display()
 {
