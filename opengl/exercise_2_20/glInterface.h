@@ -1,3 +1,50 @@
-#include <OpenGL/GL.h>
+#include <OpenGL/gl.h>
+#include <cstdio>
 
 extern void glInterfaceAccum (GLenum op, GLfloat value);
+
+extern void glInterfaceColor (GLbyte red, GLbyte green, GLbyte blue);
+extern void glInterfaceColor (const GLbyte *v);
+extern void glInterfaceColor (GLdouble red, GLdouble green, GLdouble blue);
+extern void glInterfaceColor (const GLdouble *v);
+extern void glInterfaceColor (GLfloat red, GLfloat green, GLfloat blue);
+extern void glInterfaceColor (const GLfloat *v);
+extern void glInterfaceColor (GLint red, GLint green, GLint blue);
+extern void glInterfaceColor (const GLint *v);
+extern void glInterfaceColor (GLshort red, GLshort green, GLshort blue);
+extern void glInterfaceColor (const GLshort *v);
+extern void glInterfaceColor (GLubyte red, GLubyte green, GLubyte blue);
+extern void glInterfaceColor (const GLubyte *v);
+extern void glInterfaceColor (GLuint red, GLuint green, GLuint blue);
+extern void glInterfaceColor (const GLuint *v);
+extern void glInterfaceColor (GLushort red, GLushort green, GLushort blue);
+extern void glInterfaceColor (const GLushort *v);
+extern void glInterfaceColor (GLbyte red, GLbyte green, GLbyte blue, GLbyte alpha);
+extern void glInterfaceColor (GLdouble red, GLdouble green, GLdouble blue, GLdouble alpha);
+extern void glInterfaceColor (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
+extern void glInterfaceColor (GLint red, GLint green, GLint blue, GLint alpha);
+extern void glInterfaceColor (GLshort red, GLshort green, GLshort blue, GLshort alpha);
+extern void glInterfaceColor (GLubyte red, GLubyte green, GLubyte blue, GLubyte alpha);
+extern void glInterfaceColor (GLuint red, GLuint green, GLuint blue, GLuint alpha);
+extern void glInterfaceColor (GLushort red, GLushort green, GLushort blue, GLushort alpha);
+extern void glInterfaceColor4 (const GLbyte *v);
+extern void glInterfaceColor4 (const GLdouble *v);
+extern void glInterfaceColor4 (const GLfloat *v);
+extern void glInterfaceColor4 (const GLint *v);
+extern void glInterfaceColor4 (const GLshort *v);
+extern void glInterfaceColor4 (const GLubyte *v);
+extern void glInterfaceColor4 (const GLuint *v);
+extern void glInterfaceColor4 (const GLushort *v);
+extern void glInterfaceColorMask (GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha);
+extern void glInterfaceColorMaterial (GLenum face, GLenum mode);
+extern void glInterfaceColorPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
+extern void glInterfaceColorSubTable (GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data);
+extern void glInterfaceColorTable (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table);
+extern void glInterfaceColorTableParameter (GLenum target, GLenum pname, const GLfloat *params);
+extern void glInterfaceColorTableParameter (GLenum target, GLenum pname, const GLint *params);
+extern void glInterfaceConvolutionFilter (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image);
+extern void glInterfaceConvolutionFilter (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image);
+extern void glInterfaceConvolutionParameter (GLenum target, GLenum pname, GLfloat params);
+extern void glInterfaceConvolutionParameter (GLenum target, GLenum pname, const GLfloat *params);
+extern void glInterfaceConvolutionParameter (GLenum target, GLenum pname, GLint params);
+extern void glInterfaceConvolutionParameter (GLenum target, GLenum pname, const GLint *params);
