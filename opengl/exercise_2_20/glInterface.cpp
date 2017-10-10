@@ -236,3 +236,455 @@ void glInterfaceConvolutionParameter (GLenum target, GLenum pname, const GLint *
 {
 	glConvolutionParameteriv(target, pname, params);
 }
+
+void glInterfaceCopyColorSubTable (GLenum target, GLsizei start, GLint x, GLint y, GLsizei width)
+{
+	glCopyColorSubTable(target, start, x, y, width);
+}
+
+void glInterfaceCopyColorTable (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)
+{
+	glCopyColorTable(target, internalformat, x, y, width);
+}
+
+void glInterfaceCopyConvolutionFilter (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)
+{
+	glCopyConvolutionFilter1D(target, internalformat, x, y, width);
+}
+
+void glInterfaceCopyConvolutionFilter (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height)
+{
+	glCopyConvolutionFilter2D(target, internalformat, x, y, width, height);
+}
+
+void glInterfaceCopyPixels (GLint x, GLint y, GLsizei width, GLsizei height, GLenum type)
+{
+	glCopyPixels(x, y, width, height, type);
+}
+
+void glInterfaceCopyTexImage (GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)
+{
+	glCopyTexImage1D(target, level, internalformat, x, y, width, border);
+}
+
+void glInterfaceCopyTexImage (GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)
+{
+	glCopyTexImage2D(target, level, internalformat, x, y, width, height, border);
+}
+
+void glInterfaceCopyTexSubImage (GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)
+{
+	glCopyTexSubImage1D(target, level, xoffset, x, y, width);
+}
+
+void glInterfaceCopyTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)
+{
+	glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height);
+}
+
+void glInterfaceCopyTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
+{
+	glCopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height);
+}
+
+void glInterfaceCullFace (GLenum mode)
+{
+	glCullFace(mode);
+}
+
+void glInterfaceDeleteLists (GLuint list, GLsizei range)
+{
+	glDeleteLists(list, range);
+}
+
+void glInterfaceDeleteTextures (GLsizei n, const GLuint *textures)
+{
+	glDeleteTextures(n, textures);
+}
+
+void glInterfaceDepthFunc (GLenum func)
+{
+	glDepthFunc(func);
+}
+
+void glInterfaceDepthMask (GLboolean flag)
+{
+	glDepthMask(flag);
+}
+
+void glInterfaceDepthRange (GLclampd zNear, GLclampd zFar)
+{
+	glDepthRange(zNear, zFar);	
+}
+
+void glInterfaceDisable (GLenum cap)
+{
+	glDisable(cap);	
+}
+
+void glInterfaceDisableClientState (GLenum array)
+{
+	glDisableClientState(array);
+}
+
+void glInterfaceDrawArrays (GLenum mode, GLint first, GLsizei count)
+{
+	glDrawArrays(mode, first, count);
+}
+
+void glInterfaceDrawBuffer (GLenum mode)
+{
+	glDrawBuffer(mode);
+}
+
+void glInterfaceDrawElements (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices)
+{
+	glDrawElements(mode, count, type, indices);
+}
+
+void glInterfaceDrawPixels (GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glDrawPixels(width, height, format, type, pixels);
+}
+
+void glInterfaceDrawRangeElements (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices)
+{
+	glDrawRangeElements(mode, start, end, count, type, indices);
+}
+
+void glInterfaceEdgeFlag (GLboolean flag)
+{
+	glEdgeFlag(flag);
+}
+
+void glInterfaceEdgeFlag (GLsizei stride, const GLvoid *pointer)
+{
+	glEdgeFlagPointer(stride, pointer);
+}
+
+void glInterfaceEdgeFlag(const GLboolean *flag)
+{
+	glEdgeFlagv(flag);
+}
+
+void glInterfaceEnable (GLenum cap)
+{
+	glEnable(cap);
+}
+
+void glInterfaceEnableClientState (GLenum array)
+{
+	glEnableClientState(array);
+}
+
+void glInterfaceEnd (void)
+{
+	glEnd();
+}
+
+void glInterfaceEndList (void)
+{
+	glEndList();
+}
+
+void glInterfaceEvalCoord (GLdouble u)
+{
+	glEvalCoord1d(u);
+}
+
+void glInterfaceEvalCoord (const GLdouble *u)
+{
+	glEvalCoord1dv(u);
+}
+
+void glInterfaceEvalCoord (GLfloat u)
+{
+	glEvalCoord1f(u);
+}
+
+void glInterfaceEvalCoord (const GLfloat *u)
+{
+	glEvalCoord1fv(u);
+}
+
+void glInterfaceEvalCoord (GLdouble u, GLdouble v)
+{
+	glEvalCoord2d(u,v);
+}
+
+
+void glInterfaceEvalCoord (GLfloat u, GLfloat v)
+{
+	glEvalCoord2f(u,v);	
+}
+
+
+void glInterfaceEvalCoord2 (const GLdouble *u)
+{
+	glEvalCoord2dv(u);
+}
+
+void glInterfaceEvalCoord2 (const GLfloat *u)
+{
+	glEvalCoord2fv(u);
+}
+
+void glInterfaceEvalMesh (GLenum mode, GLint i1, GLint i2)
+{
+	glEvalMesh1(mode, i1, i2);
+}
+
+void glInterfaceEvalMesh (GLenum mode, GLint i1, GLint i2, GLint j1, GLint j2)
+{
+	glEvalMesh2(mode, i1, i2, j1, j2);
+}
+
+void glInterfaceEvalPoint (GLint i)
+{
+	glEvalPoint1(i);
+}
+
+void glInterfaceEvalPoint (GLint i, GLint j)
+{
+	glEvalPoint2(i,j);
+}
+
+void glInterfaceFeedbackBuffer (GLsizei size, GLenum type, GLfloat *buffer)
+{
+	glFeedbackBuffer(size, type, buffer);
+}
+
+void glInterfaceFinish (void)
+{
+	glFinish();
+}
+
+void glInterfaceFlush (void)
+{
+	glFlush();
+}
+
+void glInterfaceFog (GLenum pname, GLfloat param)
+{
+	glFogf(pname, param);
+}
+
+void glInterfaceFog (GLenum pname, const GLfloat *params)
+{
+	glFogfv(pname, params);
+}
+
+void glInterfaceFog (GLenum pname, GLint param)
+{
+	glFogi(pname, param);
+}
+
+void glInterfaceFog (GLenum pname, const GLint *params)
+{
+	glFogiv(pname, params);
+}
+
+void glInterfaceFrontFace (GLenum mode)
+{
+	glFrontFace(mode);
+}
+
+void glInterfaceFrustum (GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar)
+{
+	glFrustum(left, right, bottom, top, zNear, zFar);
+}
+
+GLuint glInterfaceGenLists (GLsizei range)
+{
+	return glGenLists(range);
+}
+
+void glInterfaceGenTextures (GLsizei n, GLuint *textures)
+{
+	glGenTextures(n, textures);
+}
+
+void glInterfaceGetBooleanv (GLenum pname, GLboolean *params)
+{
+	glGetBooleanv(pname, params);
+}
+
+void glInterfaceGetClipPlane (GLenum plane, GLdouble *equation)
+{
+	glGetClipPlane(plane, equation);
+}
+
+void glInterfaceGetColorTable (GLenum target, GLenum format, GLenum type, GLvoid *table)
+{
+	glGetColorTable(target, format, type, table);
+}
+
+void glInterfaceGetColorTableParameter (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetColorTableParameterfv(target, pname, params);
+}
+
+void glInterfaceGetColorTableParameter (GLenum target, GLenum pname, GLint *params)
+{
+	glGetColorTableParameteriv(target, pname, params);
+}
+
+void glInterfaceGetConvolutionFilter (GLenum target, GLenum format, GLenum type, GLvoid *image)
+{
+	glGetConvolutionFilter(target, format, type, image);
+}
+
+void glInterfaceGetConvolutionParameter (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetConvolutionParameterfv(target, pname, params);
+}
+
+void glInterfaceGetConvolutionParameter (GLenum target, GLenum pname, GLint *params)
+{
+	glGetConvolutionParameteriv(target, pname, params);
+}
+
+void glInterfaceGetDoublev (GLenum pname, GLdouble *params)
+{
+	glGetDoublev(pname, params);
+}
+
+GLenum glInterfaceGetError (void)
+{
+	return glGetError();
+}
+
+void glInterfaceGetFloatv (GLenum pname, GLfloat *params)
+{
+	glGetFloatv(pname, params);
+}
+
+void glInterfaceGetHistogram (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values)
+{
+	glGetHistogram(target, reset, format, type, values);
+}
+
+void glInterfaceGetHistogramParameter (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetHistogramParameterfv(target, pname, params);
+}
+
+void glInterfaceGetHistogramParameter (GLenum target, GLenum pname, GLint *params)
+{
+	glGetHistogramParameteriv(target, pname, params);
+}
+
+void glInterfaceGetIntegerv (GLenum pname, GLint *params)
+{
+	glGetIntegerv(pname, params);
+}
+
+void glInterfaceGetLight (GLenum light, GLenum pname, GLfloat *params)
+{
+	glGetLightfv(light, pname, params);
+}
+
+void glInterfaceGetLight (GLenum light, GLenum pname, GLint *params)
+{
+	glGetLightiv(light, pname, params);
+}
+
+void glInterfaceGetMap (GLenum target, GLenum query, GLdouble *v)
+{
+	glGetMapdv(target, query, v);
+}
+
+void glInterfaceGetMap (GLenum target, GLenum query, GLfloat *v)
+{
+	glGetMapfv(target, query, v);
+}
+
+void glInterfaceGetMap (GLenum target, GLenum query, GLint *v)
+{
+	glGetMapiv(target, query, v);
+}
+
+void glInterfaceGetMaterial (GLenum face, GLenum pname, GLfloat *params)
+{
+	glGetMaterialfv(face, pname, params);
+}
+
+void glInterfaceGetMaterialiv (GLenum face, GLenum pname, GLint *params)
+{
+	glGetMaterialiv(face, pname, params);
+}
+
+void glInterfaceGetMinmax (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values)
+{
+	glGetMinmax(target, reset, format, type, values);
+}
+
+void glInterfaceGetMinmaxParameter (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetMinmaxParameterfv(target, pname, params);
+}
+
+void glInterfaceGetMinmaxParameter (GLenum target, GLenum pname, GLint *params)
+{
+	glGetMinmaxParameteriv(target, pname, params);
+}
+
+void glInterfaceGetPixelMap (GLenum map, GLfloat *values)
+{
+	glGetPixelMapfv(map, values);
+}
+
+void glInterfaceGetPixelMap (GLenum map, GLuint *values)
+{
+	glGetPixelMapuiv(map, values);
+}
+
+void glInterfaceGetPixelMap (GLenum map, GLushort *values)
+{
+	glGetPixelMapusv(map, values);
+}
+
+void glInterfaceGetPointerv (GLenum pname, GLvoid **params)
+{
+	glGetPointerv(pname, params);
+}
+
+void glInterfaceGetPolygonStipple (GLubyte *mask)
+{
+	glGetPolygonStipple(mask);
+}
+
+void glInterfaceGetSeparableFilter (GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span)
+{
+	glGetSeparableFilter(target, format, type, row, column, span);
+}
+
+const GLubyte *glInterfaceGetString (GLenum name)
+{
+	return glGetString(name);
+}
+
+void glInterfaceGetTexEnv (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetTexEnvfv(target, pname, params);
+}
+
+void glInterfaceGetTexEnv (GLenum target, GLenum pname, GLint *params)
+{
+	glGetTexEnviv(target, pname, params);
+}
+
+void glInterfaceGetTexGen (GLenum coord, GLenum pname, GLdouble *params)
+{
+	glGetTexGendv(coord, pname, params);
+}
+
+void glInterfaceGetTexGen (GLenum coord, GLenum pname, GLfloat *params)
+{
+	glGetTexGenfv(coord, pname, params);
+}
+
+void glInterfaceGetTexGen (GLenum coord, GLenum pname, GLint *params)
+{
+	glGetTexGeniv(coord, pname, params);
+}
