@@ -1,8 +1,27 @@
-#include <OpenGL/gl.h>
+// #include <OpenGL/gl.h>
+#include <OpenGL/GL.h>
 #include <cstdio>
 
 extern void glInterfaceAccum (GLenum op, GLfloat value);
-
+extern void glInterfaceAlphaFunc (GLenum func, GLclampf ref);
+extern GLboolean glInterfaceAreTexturesResident (GLsizei n, const GLuint *textures, GLboolean *residences);
+extern void glInterfaceArrayElement (GLint i);
+extern void glInterfaceBegin (GLenum mode);
+extern void glInterfaceBindTexture (GLenum target, GLuint texture);
+extern void glInterfaceBitmap (GLsizei width, GLsizei height, GLfloat xorig, GLfloat yorig, GLfloat xmove, GLfloat ymove, const GLubyte *bitmap);
+extern void glInterfaceBlendColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
+extern void glInterfaceBlendEquation (GLenum mode);
+extern void glInterfaceBlendEquationSeparate (GLenum modeRGB, GLenum modeAlpha);
+extern void glInterfaceBlendFunc (GLenum sfactor, GLenum dfactor);
+extern void glInterfaceCallList (GLuint list);
+extern void glInterfaceCallLists (GLsizei n, GLenum type, const GLvoid *lists);
+extern void glInterfaceClear (GLbitfield mask);
+extern void glInterfaceClearAccum (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
+extern void glInterfaceClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
+extern void glInterfaceClearDepth (GLclampd depth);
+extern void glInterfaceClearIndex (GLfloat c);
+extern void glInterfaceClearStencil (GLint s);
+extern void glInterfaceClipPlane (GLenum plane, const GLdouble *equation);
 extern void glInterfaceColor (GLbyte red, GLbyte green, GLbyte blue);
 extern void glInterfaceColor (const GLbyte *v);
 extern void glInterfaceColor (GLdouble red, GLdouble green, GLdouble blue);

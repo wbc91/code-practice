@@ -12,6 +12,102 @@ void glInterfaceAccum(GLenum op, GLfloat value)
 	glAccum(op, value);
 }
 
+
+void glInterfaceAlphaFunc(GLenum func, GLclampf ref)
+{
+	glAlphaFunc(func, ref);
+}
+
+GLboolean glInterfaceAreTexturesResident (GLsizei n, const GLuint *textures, GLboolean *residences)
+{
+	return glAreTexturesResident(n, textures, residences);
+}
+
+void glInterfaceArrayElement(GLint i)
+{
+	glArrayElement(i);
+}
+
+void glInterfaceBegin(GLenum mode)
+{
+	glBegin(mode);
+}
+
+void glInterfaceBindTexture (GLenum target, GLuint texture)
+{
+	glBindTexture(target, texture);
+}
+
+void glInterfaceBitmap (GLsizei width, GLsizei height, GLfloat xorig, GLfloat yorig, GLfloat xmove, GLfloat ymove, const GLubyte *bitmap)
+{
+	glBitmap(width, height, xorig, yorig, xmove, ymove, bitmap);
+}
+
+void glInterfaceBlendColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)
+{
+	glBlendColor(red, green, blue, alpha);
+}
+
+void glInterfaceBlendEquation(GLenum mode)
+{
+	glBlendEquation(mode);
+}
+
+void glInterfaceBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)
+{
+	glBlendEquationSeparate(modeRGB, modeAlpha);
+}
+
+void glInterfaceBlendFunc(GLenum sfactor, GLenum dfactor)
+{
+	glBlendFunc(sfactor, dfactor);
+}
+
+void glInterfaceCallList(GLuint list)
+{
+	glCallList(list);
+}
+
+void glInterfaceCallLists (GLsizei n, GLenum type, const GLvoid *lists)
+{
+	glCallLists(n, type, lists);
+}
+
+void glInterfaceClear (GLbitfield mask)
+{
+	glClear(mask);
+}
+
+void glInterfaceClearAccum (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
+{
+	glClearAccum(red, green, blue, alpha);
+}
+
+void glInterfaceClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)
+{
+	glClearColor(red, green, blue, alpha);
+}
+
+void glInterfaceClearDepth (GLclampd depth)
+{
+	glClearDepth(depth);
+}
+
+void glInterfaceClearIndex (GLfloat c)
+{
+	glClearIndex(c);
+}
+
+void glInterfaceClearStencil (GLint s)
+{
+	glClearStencil(s);
+}
+
+void glInterfaceClipPlane (GLenum plane, const GLdouble *equation)
+{
+	glClipPlane(plane, equation);
+}
+
 void glInterfaceColor(GLbyte red, GLbyte green, GLbyte blue)
 {
 	glColor3b(red, green, blue);
