@@ -784,3 +784,634 @@ void glInterfaceGetTexGen (GLenum coord, GLenum pname, GLint *params)
 {
 	glGetTexGeniv(coord, pname, params);
 }
+
+void glInterfaceGetTexImage (GLenum target, GLint level, GLenum format, GLenum type, GLvoid *pixels)
+{
+	glGetTexImage(target, level, format, type, pixels);
+}
+
+void glInterfaceGetTexLevelParameter (GLenum target, GLint level, GLenum pname, GLfloat *params)
+{
+	glGetTexLevelParameterfv(target, level, pname, params);
+}
+
+void glInterfaceGetTexLevelParameter (GLenum target, GLint level, GLenum pname, GLint *params)
+{
+	glGetTexLevelParameteriv(target, level, pname, params);
+}
+
+void glInterfaceGetTexParameter (GLenum target, GLenum pname, GLfloat *params)
+{
+	glGetTexParameterfv(target, pname, params);
+}
+
+void glInterfaceGetTexParameter (GLenum target, GLenum pname, GLint *params)
+{
+	glGetTexParameteriv(target, pname, params);
+}
+
+void glInterfaceHint (GLenum target, GLenum mode)
+{
+	glHint(target, mode);
+}
+
+void glInterfaceHistogram (GLenum target, GLsizei width, GLenum internalformat, GLboolean sink)
+{
+	glHistogram(target, width, internalformat, sink);
+}
+
+void glInterfaceIndexMask (GLuint mask)
+{
+	glIndexMask(mask);
+}
+
+void glInterfaceIndexPointer (GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glIndexPointer(type, stride, pointer);
+}
+
+void glInterfaceIndex (GLdouble c)
+{
+	glIndexd(c);
+}
+
+void glInterfaceIndex (const GLdouble *c)
+{
+	glIndexdv(c);
+}
+
+void glInterfaceIndex (GLfloat c)
+{
+	glIndexf(c);
+}
+
+void glInterfaceIndex (const GLfloat *c)
+{
+	glIndexfv(c);
+}
+
+void glInterfaceIndex (GLint c)
+{
+	glIndexi(c);
+}
+
+void glInterfaceIndex (const GLint *c)
+{
+	glIndexiv(c);
+}
+
+void glInterfaceIndex(GLshort c)
+{
+	glIndexs(c);
+}
+
+void glInterfaceIndex (const GLshort *c)
+{
+	glIndexsv(c);
+}
+
+void glInterfaceIndex (GLubyte c)
+{
+	glIndexub(c);
+}
+
+void glInterfaceIndex (const GLubyte *c)
+{
+	glIndexubv(c);
+}
+
+void glInterfaceInitNames (void)
+{
+	glInitNames();
+}
+
+void glInterfaceInterleavedArrays (GLenum format, GLsizei stride, const GLvoid *pointer)
+{
+	glInterleavedArrays(format, stride, pointer);
+}
+
+GLboolean glInterfaceIsEnabled (GLenum cap)
+{
+	return glIsEnabled(cap);
+}
+
+GLboolean glInterfaceIsList (GLuint list)
+{
+	return glIsList(list);
+}
+
+GLboolean glInterfaceIsTexture (GLuint texture)
+{
+	return glIsTexture(texture);
+}
+
+void glInterfaceLightModel (GLenum pname, GLfloat param)
+{
+	glLightModelf(pname, param);
+}
+
+void glInterfaceLightModel (GLenum pname, const GLfloat *params)
+{
+	glLightModelfv(pname, params);
+}
+
+void glInterfaceLightModel (GLenum pname, GLint param)
+{
+	glLightModeli(pname, param);
+}
+
+void glInterfaceLightModel (GLenum pname, const GLint *params)
+{
+	glLightModeliv(pname, params);
+}
+
+void glInterfaceLight (GLenum light, GLenum pname, GLfloat param)
+{
+	glLightf(light, pname, param);
+}
+
+void glInterfaceLight (GLenum light, GLenum pname, const GLfloat *params)
+{
+	glLightfv(light, pname, params);
+}
+
+void glInterfaceLight (GLenum light, GLenum pname, GLint param)
+{
+	glLighti(light, pname, param);
+}
+
+void glInterfaceLight (GLenum light, GLenum pname, const GLint *params)
+{
+	glLightiv(light, pname, params);
+}
+
+void glInterfaceLineStipple (GLint factor, GLushort pattern)
+{
+	glLineStipple(factor, pattern);
+}
+
+void glInterfaceLineWidth (GLfloat width)
+{
+	glLineWidth(width);
+}
+
+void glInterfaceListBase (GLuint base)
+{
+	glListBase(base);
+}
+
+void glInterfaceLoadIdentity (void)
+{
+	glLoadIdentity();
+}
+
+void glInterfaceLoadMatrix (const GLdouble *m)
+{
+	glLoadMatrixd(m);
+}
+
+void glInterfaceLoadMatrix (const GLfloat *m)
+{
+	glLoadMatrixf(m);
+}
+
+void glInterfaceLoadName (GLuint name)
+{
+	glLoadName(name);
+}
+
+void glInterfaceLogicOp (GLenum opcode)
+{
+	glLogicOp(opcode);
+}
+
+void glInterfaceMap (GLenum target, GLdouble u1, GLdouble u2, GLint stride, GLint order, const GLdouble *points)
+{
+	glMap1d(target, u1, u2, stride, order, points);
+}
+
+void glInterfaceMap (GLenum target, GLfloat u1, GLfloat u2, GLint stride, GLint order, const GLfloat *points)
+{
+	glMap1f(target, u1, u2, stride, order, points);
+}
+
+void glInterfaceMap (GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, const GLdouble *points)
+{
+	glMap2d(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points);
+}
+
+void glInterfaceMap (GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, const GLfloat *points)
+{
+	glMap2f(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points);
+}
+
+void glInterfaceMapGrid (GLint un, GLdouble u1, GLdouble u2)
+{
+	glMapGrid1d(un, u1, u2);
+}
+
+void glInterfaceMapGrid (GLint un, GLfloat u1, GLfloat u2)
+{
+	glMapGrid1f(un, u1, u2);
+}
+
+void glInterfaceMapGrid (GLint un, GLdouble u1, GLdouble u2, GLint vn, GLdouble v1, GLdouble v2)
+{
+	glMapGrid2d(un, u1, u2, vn, v1, v2);
+}
+
+void glInterfaceMapGrid (GLint un, GLfloat u1, GLfloat u2, GLint vn, GLfloat v1, GLfloat v2)
+{
+	glMapGrid2f(un, u1, u2, vn, v1, v2);
+}
+
+void glInterfaceMaterial (GLenum face, GLenum pname, GLfloat param)
+{
+	glMaterialf(face, pname, param);
+}
+
+void glInterfaceMaterial (GLenum face, GLenum pname, const GLfloat *params)
+{
+	glMaterialfv(face, pname, params);
+}
+
+void glInterfaceMaterial (GLenum face, GLenum pname, GLint param)
+{
+	glMateriali(face, pname, param);
+}
+
+void glInterfaceMaterial (GLenum face, GLenum pname, const GLint *params)
+{
+	glMaterialiv(face, pname, params);
+}
+
+void glInterfaceMatrixMode (GLenum mode)
+{
+	glMatrixMode(mode);
+}
+
+void glInterfaceMinmax (GLenum target, GLenum internalformat, GLboolean sink)
+{
+	glMinmax(target, internalformat, sink);
+}
+
+void glInterfaceMultMatrix (const GLdouble *m)
+{
+	glMultMatrixd(m);
+}
+
+void glInterfaceMultMatrix (const GLfloat *m)
+{
+	glMultMatrixf(m);
+}
+
+void glInterfaceNewList (GLuint list, GLenum mode)
+{
+	glNewList(list, mode);
+}
+
+void glInterfaceNormal (GLbyte nx, GLbyte ny, GLbyte nz)
+{
+	glNormal3b(nx, ny, nz);
+}
+
+void glInterfaceNormal (const GLbyte *v)
+{
+	glNormal3bv(v);
+}
+
+void glItnerfaceNormal (GLdouble nx, GLdouble ny, GLdouble nz)
+{
+	glNormal3d(nx, ny, nz);
+}
+
+void glInterfaceNormal (const GLdouble *v)
+{
+	glNormal3dv(v);
+}
+
+void glInterfaceNormal (GLfloat nx, GLfloat ny, GLfloat nz)
+{
+	glNormal3f(nx, ny, nz);
+}
+
+void glInterfaceNormal (const GLfloat *v)
+{
+	glNormal3fv(v);
+}
+
+void glInterfaceNormal (GLint nx, GLint ny, GLint nz)
+{
+	glNormal3i(nx, ny, nz);
+}
+
+void glInterfaceNormal (const GLint *v)
+{
+	glNormal3iv(v);
+}
+
+void glInterfaceNormal (GLshort nx, GLshort ny, GLshort nz)
+{
+	glNormal3s(nx, ny, nz);
+}
+
+void glInterfaceNormal (const GLshort *v)
+{
+	glNormal3sv(v);
+}
+
+void glInterfaceNormalPointer (GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glNormalPointer(type, stride, pointer);
+}
+
+void glInterfaceOrtho (GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar)
+{
+	glOrtho(left, right, bottom, top, zNear, zFar);
+}
+
+void glInterfacePassThrough (GLfloat token)
+{
+	glPassThrough(token);
+}
+
+void glInterfacePixelMap (GLenum map, GLint mapsize, const GLfloat *values)
+{
+	glPixelMapfv(map, mapsize, values);
+}
+
+void glInterfacePixelMap (GLenum map, GLint mapsize, const GLuint *values)
+{
+	glPixelMapuiv(map, mapsize, values);
+}
+
+void glInterfacePixelMap (GLenum map, GLint mapsize, const GLushort *values)
+{
+	glPixelMapusv(map, mapsize, values);
+}
+
+void glInterfacePixelStore (GLenum pname, GLfloat param)
+{
+	glPixelStoref(pname, param);
+}
+
+void glInterfacePixelStore (GLenum pname, GLint param)
+{
+	glPixelStorei(pname, param);
+}
+
+void glInterfacePixelTransfer (GLenum pname, GLfloat param)
+{
+	glPixelTransferf(pname, param);
+}
+
+void glInterfacePixelTransfer (GLenum pname, GLint param)
+{
+	glPixelTransferi(pname, param);
+}
+
+void glInterfacePixelZoom (GLfloat xfactor, GLfloat yfactor)
+{
+	glPixelZoom(xfactor, yfactor);
+}
+
+void glInterfacePointSize (GLfloat size)
+{
+	glPointSize(size);
+}
+
+void glInterfacePolygonMode (GLenum face, GLenum mode)
+{
+	glPolygonMode(face, mode);
+}
+
+void glInterfacePolygonOffset (GLfloat factor, GLfloat units)
+{
+	glPolygonOffset(factor, units);
+}
+
+void glInterfacePolygonStipple (const GLubyte *mask)
+{
+	glPolygonStipple(mask);
+}
+
+void glInterfacePopAttrib (void)
+{
+	glPopAttrib();
+}
+
+void glInterfacePopClientAttrib (void)
+{
+	glPopClientAttrib();
+}
+
+void glInterfacePopMatrix (void)
+{
+	glPopMatrix();
+}
+
+void glInterfacePopName (void)
+{
+	glPopName();
+}
+
+void glInterfacePrioritizeTextures (GLsizei n, const GLuint *textures, const GLclampf *priorities)
+{
+	glPrioritizeTextures(n, textures, priorities);
+}
+
+void glInterfacePushAttrib (GLbitfield mask)
+{
+	glPushAttrib(mask);
+}
+
+void glInterfacePushClientAttrib (GLbitfield mask)
+{
+	glPushClientAttrib(mask);
+}
+
+void glInterfacePushMatrix (void)
+{
+	glPushMatrix();
+}
+
+void glInterfacePushName (GLuint name)
+{
+	glPushName(name);
+}
+
+void glInterfaceRasterPos (GLdouble x, GLdouble y)
+{
+	glRasterPos2d(x, y);
+}
+
+void glInterfaceRasterPos (const GLdouble *v)
+{
+	glRasterPos2dv(v);
+}
+
+void glInterfaceRasterPos (GLfloat x, GLfloat y)
+{
+	glRasterPos2f(x, y);
+}
+
+void glInterfaceRasterPos (const GLfloat *v)
+{
+	glRasterPos2fv(v);
+}
+
+void glInterfaceRasterPos (GLint x, GLint y)
+{
+	glRasterPos2i(x, y);
+}
+
+void glInterfaceRasterPos (const GLint *v)
+{
+	glRasterPos2iv(v);
+}
+
+void glInterfaceRasterPos (GLshort x, GLshort y)
+{
+	glRasterPos2s(x, y);
+}
+
+void glInterfaceRasterPos (const GLshort *v)
+{
+	glRasterPos2sv(v);
+}
+
+void glInterfaceRasterPos3 (GLdouble x, GLdouble y, GLdouble z)
+{
+	glRasterPos3d(x, y, z);
+}
+
+void glInterfaceRasterPos3 (const GLdouble *v)
+{
+	glRasterPos3dv(v);
+}
+
+void glInterfaceRasterPos3 (GLfloat x, GLfloat y, GLfloat z)
+{
+	glRasterPos3f(x, y, z);
+}
+
+void glInterfaceRasterPos3 (const GLfloat *v)
+{
+	glRasterPos3fv(v);
+}
+
+void glInterfaceRasterPos3 (GLint x, GLint y, GLint z)
+{
+	glRasterPos3i(x, y, z);
+}
+
+void glInterfaceRasterPos3 (const GLint *v)
+{
+	glRasterPos3iv(v);
+}
+
+void glInterfaceRasterPos3 (GLshort x, GLshort y, GLshort z)
+{
+	glRasterPos3s(x, y, z);
+}
+
+void glInterfaceRasterPos3 (const GLshort *v)
+{
+	glRasterPos3sv(v);
+}
+
+void glInterfaceRasterPos4 (GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+{
+	glRasterPos4d(x, y, z, w);
+}
+
+void glInterfaceRasterPos4 (const GLdouble *v)
+{
+	glRasterPos4dv(v);
+}
+
+void glInterfaceRasterPos4 (GLfloat x, GLfloat y, GLdouble z, GLdouble w)
+{
+	glRasterPos4f(x, y, z, w);
+}
+
+void glInterfaceRasterPos4 (const GLfloat *v)
+{
+	glRasterPos4fv(v);
+}
+
+void glInterfaceRasterPos4 (GLint x, GLint y, GLint z, GLint w)
+{
+	glRasterPos4i(x, y, z, w);
+}
+
+void glInterfaceRasterPos4 (const GLint *v)
+{
+	glRasterPos4iv(v);
+}
+
+void glInterfaceRasterPos4 (GLshort x, GLshort y, GLshort z, GLshort w)
+{
+	glRasterPos4s(x, y, z, w);
+}
+
+void glInterfaceRasterPos4 (const GLshort *v)
+{
+	glRasterPos4sv(v);
+}
+
+void glInterfaceReadBuffer (GLenum mode)
+{
+	glReadBuffer(mode);
+}
+
+void glInterfaceReadPixels (GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid *pixels)
+{
+	glReadPixels(x, y, width, height, format, type, pixels);
+}
+
+void glInterfaceRect (GLdouble x1, GLdouble y1, GLdouble x2, GLdouble y2)
+{
+	glRectd(x1, y1, x2, y2);
+}
+
+void glInterfaceRect (const GLdouble *v1, const GLdouble *v2)
+{
+	glRectdv(v1, v2);
+}
+
+void glInterfaceRect (GLfloat x1, GLfloat y1, GLfloat x2, GLfloat y2)
+{
+	glRectf(x1, y1, x2, y2);
+}
+
+void glInterfaceRect (const GLfloat *v1, const GLfloat *v2)
+{
+	glRectfv(v1, v2);
+}
+
+void glInterfaceRect (GLint x1, GLint y1, GLint x2, GLint y2)
+{
+	glRecti(x1, y1, x2, y2);
+}
+
+void glInterfaceRect (const GLint *v1, const GLint *v2)
+{
+	glRectiv(v1, v2);
+}
+
+void glInterfaceRect (GLshort x1, GLshort y1, GLshort x2, GLshort y2)
+{
+	glRects(x1, y1, x2, y2);
+}
+
+void glInterfaceRect (const GLshort *v1, const GLshort *v2)
+{
+	glRectsv(v1, v2);
+}
+
+GLint glInterfaceRenderMode (GLenum mode)
+{
+	return glRenderMode(mode);
+}
+
