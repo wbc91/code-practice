@@ -1415,3 +1415,472 @@ GLint glInterfaceRenderMode (GLenum mode)
 	return glRenderMode(mode);
 }
 
+void glInterfaceResetHistogram (GLenum target)
+{
+	glResetHistogram(target);
+}
+
+void glInterfaceResetMinmax (GLenum target)
+{
+	glResetMinmax(target);
+}
+
+void glInterfaceRotate (GLdouble angle, GLdouble x, GLdouble y, GLdouble z)
+{
+	glRotated(angle, x, y, z);
+}
+
+void glInterfaceRotate (GLfloat angle, GLfloat x, GLfloat y, GLfloat z)
+{
+	glRotatef(angle, x, y, z);
+}
+
+void glInterfaceScale (GLdouble x, GLdouble y, GLdouble z)
+{
+	glScaled(x, y, z);
+}
+
+void glInterfaceScale (GLfloat x, GLfloat y, GLfloat z)
+{
+	glScalef(x, y, z);
+}
+
+void glInterfaceScissor (GLint x, GLint y, GLsizei width, GLsizei height)
+{
+	glScissor(x, y, width, height);
+}
+
+void glInterfaceSelectBuffer (GLsizei size, GLuint *buffer)
+{
+	glSelectBuffer(size, buffer);
+}
+
+void glInterfaceSeparableFilter2D (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column)
+{
+	glSeparableFilter2D(target, internalformat, width, height, format, type, row, column);
+}
+
+void glInterfaceShadeModel (GLenum mode)
+{
+	glShadeModel(mode);
+}
+
+void glInterfaceStencilFunc (GLenum func, GLint ref, GLuint mask)
+{
+	glStencilFunc(func, ref, mask);
+}
+
+void glInterfaceStencilMask (GLuint mask)
+{
+	glStencilMask(mask);
+}
+
+void glInterfaceStencilOp (GLenum fail, GLenum zfail, GLenum zpass)
+{
+	glStencilOp(fail, zfail, zpass);
+}
+
+void glInterfaceTexCoord (GLdouble s)
+{
+	glTexCoord1d(s);
+}
+
+void glInterfaceTexCoord (GLdouble s, GLdouble t)
+{
+	glTexCoord2d(s, t);
+}
+
+void glInterfaceTexCoord (GLdouble s, GLdouble t, GLdouble r)
+{
+	glTexCoord3d(s, t, r);
+}
+
+void glInterfaceTexCoord (GLdouble s, GLdouble t, GLdouble r, GLdouble q)
+{
+	glTexCoord4d(s, t, r, q);
+}
+
+void glInterfaceTexCoord (const GLdouble *v)
+{
+	glTexCoord1dv(v);
+}
+
+void glInterfaceTexCoord2 (const GLdouble *v)
+{
+	glTexCoord2dv(v);
+}
+
+void glInterfaceTexCoord3 (const GLdouble *v)
+{
+	glTexCoord3dv(v);
+}
+
+void glInterfaceTexCoord4 (const GLdouble *v)
+{
+	glTexCoord4dv(v);
+}
+
+void glInterfaceTexCoord (GLfloat s)
+{
+	glTexCoord1f(s);
+}
+
+void glInterfaceTexCoord (GLfloat s, GLfloat t)
+{
+	glTexCoord2f(s, t);
+}
+
+void glInterfaceTexCoord (GLfloat s, GLfloat t, GLfloat r)
+{
+	glTexCoord3f(s, t, r);
+}
+
+void glInterfaceTexCoord (GLfloat s, GLfloat t, GLfloat r, GLfloat q)
+{
+	glTexCoord4f(s, t, r, q);
+}
+
+void glInterfaceTexCoord (const GLfloat *v)
+{
+	glTexCoord1fv(v);
+}
+
+void glInterfaceTexCoord2 (const GLfloat *v)
+{
+	glTexCoord2fv(v);
+}
+
+void glInterfaceTexCoord3 (const GLfloat *v)
+{
+	glTexCoord3fv(v);
+}
+
+void glInterfaceTexCoord4 (const GLfloat *v)
+{
+	glTexCoord4fv(v);
+}
+
+void glInterfaceTexCoord (GLint s)
+{
+	glTexCoord1i(s);
+}
+
+void glInterfaceTexCoord (GLint s, GLint t)
+{
+	glTexCoord2i(s, t);
+}
+
+void glInterfaceTexCoord (GLint s, GLint t, GLint r)
+{
+	glTexCoord3i(s, t, r);
+}
+
+void glInterfaceTexCoord (GLint s, GLint t, GLint r, GLint q)
+{
+	glTexCoord4i(s, t, r, q);
+}
+
+void glInterfaceTexCoord (const GLint *v)
+{
+	glTexCoord1iv(v);
+}
+
+void glInterfaceTexCoord2 (const GLint *v)
+{
+	glTexCoord2iv(v);
+}
+
+void glInterfaceTexCoord3 (const GLint *v)
+{
+	glTexCoord3iv(v);
+}
+
+void glInterfaceTexCoord4 (const GLint *v)
+{
+	glTexCoord4iv(v);
+}
+
+void glInterfaceTexCoord (GLshort s)
+{
+	glTexCoord1s(s);
+}
+
+void glInterfaceTexCoord (GLshort s, GLshort t)
+{
+	glTexCoord2s(s, t);
+}
+
+void glInterfaceTexCoord (GLshort s, GLshort t, GLshort r)
+{
+	glTexCoord3s(s, t, r);
+}
+
+void glInterfaceTexCoord (GLshort s, GLshort t, GLshort r, GLshort q)
+{
+	glTexCoord4s(s, t, r, q);
+}
+
+void glInterfaceTexCoord (const GLshort *v)
+{
+	glTexCoord1sv(v);
+}
+
+void glInterfaceTexCoord2 (const GLshort *v)
+{
+	glTexCoord2sv(v);
+}
+
+void glInterfaceTexCoord3 (const GLshort *v)
+{
+	glTexCoord3sv(v);
+}
+
+void glInterfaceTexCoord4 (const GLshort *v)
+{
+	glTexCoord4sv(v);
+}
+
+void glInterfaceTexCoordPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glTexCoordPointer(size, type, stride, pointer);
+}
+
+void glInterfaceTexEnv (GLenum target, GLenum pname, GLfloat param)
+{
+	glTexEnvf(target, pname, param);
+}
+
+void glInterfaceTexEnv (GLenum target, GLenum pname, const GLfloat *params)
+{
+	glTexEnvfv(target, pname, params);
+}
+
+void glInterfaceTexEnv (GLenum target, GLenum pname, GLint param)
+{
+	glTexEnvi(target, pname, param);
+}
+
+void glInterfaceTexEnv (GLenum target, GLenum pname, const GLint *params)
+{
+	glTexEnviv(target, pname, params);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, GLdouble param)
+{
+	glTexGend(coord, pname, param);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, const GLdouble *params)
+{
+	glTexGendv(coord, pname, params);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, GLfloat param)
+{
+	glTexGenf(coord, pname, param);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, const GLfloat *params)
+{
+	glTexGenfv(coord, pname, params);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, GLint param)
+{
+	glTexGeni(coord, pname, param);
+}
+
+void glInterfaceTexGen (GLenum coord, GLenum pname, const GLint *params)
+{
+	glTexGeniv(coord, pname, params);
+}
+
+void glInterfaceTexImage (GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexImage1D(target, level, internalformat, width, border, format, type, pixels);
+}
+
+void glInterfaceTexImage (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels);
+}
+
+void glInterfaceTexImage (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexImage3D(target, level, internalformat, width, height, depth, border, format, type, pixels);
+}
+
+void glInterfaceTexParameter (GLenum target, GLenum pname, GLfloat param)
+{
+	glTexParameterf(target, pname, param);
+}
+
+void glInterfaceTexParameter (GLenum target, GLenum pname, const GLfloat *params)
+{
+	glTexParameterfv(target, pname, params);
+}
+
+void glInterfaceTexParameter (GLenum target, GLenum pname, GLint param)
+{
+	glTexParameteri(target, pname, param);
+}
+
+void glInterfaceTexParameter (GLenum target, GLenum pname, const GLint *params)
+{
+	glTexParameteriv(target, pname, params);
+}
+
+void glInterfaceTexSubImage (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexSubImage1D(target, level, xoffset, width, format, type, pixels);
+}
+
+void glInterfaceTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels);
+}
+
+void glInterfaceTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels)
+{
+	glTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels);
+}
+
+void glInterfaceTranslate (GLdouble x, GLdouble y, GLdouble z)
+{
+	glTranslated(x, y, z);
+}
+
+void glInterfaceTranslate (GLfloat x, GLfloat y, GLfloat z)
+{
+	glTranslatef(x, y, z);
+}
+
+void glInterfaceVertex (GLdouble x, GLdouble y)
+{
+	glVertex2d(x, y);
+}
+
+void glInterfaceVertex (const GLdouble *v)
+{
+	glVertex2dv(v);
+}
+
+void glInterfaceVertex (GLfloat x, GLfloat y)
+{
+	glVertex2f(x, y);
+}
+
+void glInterfaceVertex (const GLfloat *v)
+{
+	glVertex2fv(v);
+}
+
+void glInterfaceVertex (GLint x, GLint y)
+{
+	glVertex2i(x, y);
+}
+
+void glInterfaceVertex (const GLint *v)
+{
+	glVertex2iv(v);
+}
+
+void glInterfaceVertex (GLshort x, GLshort y)
+{
+	glVertex2s(x, y);
+}
+
+void glInterfaceVertex (const GLshort *v)
+{
+	glVertex2sv(v);
+}
+
+void glInterfaceVertex (GLdouble x, GLdouble y, GLdouble z)
+{
+	glVertex3d(x, y, z);
+}
+
+void glInterfaceVertex3 (const GLdouble *v)
+{
+	glVertex3dv(v);
+}
+
+void glInterfaceVertex (GLfloat x, GLfloat y, GLfloat z)
+{
+	glVertex3f(x, y, z);
+}
+
+void glInterfaceVertex3 (const GLfloat *v)
+{
+	glVertex3fv(v);
+}
+
+void glInterfaceVertex (GLint x, GLint y, GLint z)
+{
+	glVertex3i(x, y, z);
+}
+
+void glInterfaceVertex3 (const GLint *v)
+{
+	glVertex3iv(v);
+}
+
+void glInterfaceVertex (GLshort x, GLshort y, GLshort z)
+{
+	glVertex3s(x, y, z);
+}
+
+void glInterfaceVertex3 (const GLshort *v)
+{
+	glVertex3sv(v);
+}
+
+void glInterfaceVertex (GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+{
+	glVertex4d(x, y, z, w);
+}
+
+void glInterfaceVertex4 (const GLdouble *v)
+{
+	glVertex4dv(v);
+}
+
+void glInterfaceVertex (GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+{
+	glVertex4f(x, y, z, w);
+}
+
+void glInterfaceVertex4 (const GLfloat *v)
+{
+	glVertex4fv(v);
+}
+
+void glInterfaceVertex (GLint x, GLint y, GLint z, GLint w)
+{
+	glVertex4i(x, y, z, w);
+}
+
+void glInterfaceVertex4 (const GLint *v)
+{
+	glVertex4iv(v);
+}
+
+void glInterfaceVertex (GLshort x, GLshort y, GLshort z, GLshort w)
+{
+	glVertex4s(x, y, z, w);
+}
+
+void glInterfaceVertex4 (const GLshort *v)
+{
+	glVertex4sv(v);
+}
+
+void glInterfaceVertexPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glVertexPointer(size, type, stride, pointer);
+}
+
+void glInterfaceViewport (GLint x, GLint y, GLsizei width, GLsizei height)
+{
+	glViewport(x, y, width, height);
+}
