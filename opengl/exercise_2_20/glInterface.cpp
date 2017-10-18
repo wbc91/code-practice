@@ -1884,3 +1884,1033 @@ void glInterfaceViewport (GLint x, GLint y, GLsizei width, GLsizei height)
 {
 	glViewport(x, y, width, height);
 }
+
+void glInterfaceSampleCoverage (GLclampf value, GLboolean invert)
+{
+	glSampleCoverage(value, invert);
+}
+
+void glInterfaceLoadTransposeMatrix (const GLfloat *m)
+{
+	glLoadTransposeMatrixf(m);
+}
+
+void glInterfaceLoadTransposeMatrix (const GLdouble *m)
+{
+	glLoadTransposeMatrixd(m);
+}
+
+void glInterfaceMultTransposeMatrix (const GLfloat *m)
+{
+	glMultTransposeMatrixf(m);
+}
+
+void glInterfaceMultTransposeMatrix (const GLdouble *m)
+{
+	glMultTransposeMatrixd(m);
+}
+
+void glInterfaceCompressedTexImage (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize, data);
+}
+
+void glInterfaceCompressedTexImage (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data);
+}
+
+void glInterfaceCompressedTexImage (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexImage1D(target, level, internalformat, width, border, imageSize, data);
+}
+
+void glInterfaceCompressedTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data);
+}
+
+void glInterfaceCompressedTexSubImage (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data);
+}
+
+void glInterfaceCompressedTexSubImage (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data)
+{
+	glCompressedTexSubImage1D(target, level, xoffset, width, format, imageSize, data);
+}
+
+void glInterfaceGetCompressedTexImage (GLenum target, GLint lod, GLvoid *img)
+{
+	glGetCompressedTexImage(target, lod, img);
+}
+
+void glInterfaceActiveTexture (GLenum texture)
+{
+	glActiveTexture(texture);
+}
+
+void glInterfaceClientActiveTexture (GLenum texture)
+{
+	glClientActiveTexture(texture);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLdouble s)
+{
+	glMultiTexCoord1d(target, s);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, const GLdouble *v)
+{
+	glMultiTexCoord1dv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLfloat s)
+{
+	glMultiTexCoord1f(target, s);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, const GLfloat *v)
+{
+	glMultiTexCoord1fv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLint s)
+{
+	glMultiTexCoord1i(target, s);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, const GLint *v)
+{
+	glMultiTexCoord1iv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLshort s)
+{
+	glMultiTexCoord1s(target, s);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, const GLshort *v)
+{
+	glMultiTexCoord1sv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLdouble s, GLdouble t)
+{
+	glMultiTexCoord2d(target, s, t);
+}
+
+void glInterfaceMultiTexCoord2 (GLenum target, const GLdouble *v)
+{
+	glMultiTexCoord2dv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLfloat s, GLfloat t)
+{
+	glMultiTexCoord2f(target, s, t);
+}
+
+void glInterfaceMultiTexCoord2 (GLenum target, const GLfloat *v)
+{
+	glMultiTexCoord2fv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLint s, GLint t)
+{
+	glMultiTexCoord2i(target, s, t);
+}
+
+void glInterfaceMultiTexCoord2 (GLenum target, const GLint *v)
+{
+	glMultiTexCoord2iv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLshort s, GLshort t)
+{
+	glMultiTexCoord2s(target, s, t);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLdouble s, GLdouble t, GLdouble r)
+{
+	glMultiTexCoord3d(target, s, t, r);
+}
+
+void glInterfaceMultiTexCoord3 (GLenum target, const GLdouble *v)
+{
+	glMultiTexCoord3dv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLfloat s, GLfloat t, GLfloat r)
+{
+	glMultiTexCoord3f(target, s, t, r);
+}
+
+void glInterfaceMultiTexCoord3 (GLenum target, const GLfloat *v)
+{
+	glMultiTexCoord3fv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLint s, GLint t, GLint r)
+{
+	glMultiTexCoord3i(target, s, t, r);
+}
+
+void glInterfaceMultiTexCoord3 (GLenum target, const GLint *v)
+{
+	glMultiTexCoord3iv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLshort s, GLshort t, GLshort r)
+{
+	glMultiTexCoord3s(target, s, t, r);
+}
+
+void glInterfaceMultiTexCoord3 (GLenum target, const GLshort *v)
+{
+	glMultiTexCoord3sv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q)
+{
+	glMultiTexCoord4d(target, s, t, r, q);
+}
+
+void glInterfaceMultiTexCoord4 (GLenum target, const GLdouble *v)
+{
+	glMultiTexCoord4dv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q)
+{
+	glMultiTexCoord4f(target, s, t, r, q);
+}
+
+void glInterfaceMultiTexCoord4 (GLenum target, const GLfloat *v)
+{
+	glMultiTexCoord4fv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLint s, GLint t, GLint r, GLint q)
+{
+	glMultiTexCoord4i(target, s, t, r, q);
+}
+
+void glInterfaceMultiTexCoord4 (GLenum target, const GLint *v)
+{
+	glMultiTexCoord4iv(target, v);
+}
+
+void glInterfaceMultiTexCoord (GLenum target, GLshort s, GLshort t, GLshort r, GLshort q)
+{
+	glMultiTexCoord4s(target, s, t, r, q);
+}
+
+void glInterfaceMultiTexCoord4 (GLenum target, const GLshort *v)
+{
+	glMultiTexCoord4sv(target, v);
+}
+
+void glInterfaceFogCoord (GLfloat coord)
+{
+	glFogCoordf(coord);
+}
+
+void glInterfaceFogCoord (const GLfloat *coord)
+{
+	glFogCoordfv(coord);
+}
+
+void glInterfaceFogCoord (GLdouble coord)
+{
+	glFogCoordd(coord);
+}
+
+void glInterfaceFogCoord (const GLdouble *coord)
+{
+	glFogCoorddv(coord);
+}
+
+void glInterfaceFogCoordPointer (GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glFogCoordPointer(type, stride, pointer);
+}
+
+void glInterfaceSecondaryColor (GLbyte red, GLbyte green, GLbyte blue)
+{
+	glSecondaryColor3b(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLbyte *v)
+{
+	glSecondaryColor3bv(v);
+}
+
+void glInterfaceSecondaryColor (GLdouble red, GLdouble green, GLdouble blue)
+{
+	glSecondaryColor3d(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLdouble *v)
+{
+	glSecondaryColor3dv(v);
+}
+
+void glInterfaceSecondaryColor (GLfloat red, GLfloat green, GLfloat blue)
+{
+	glSecondaryColor3f(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLfloat *v)
+{
+	glSecondaryColor3fv(v);
+}
+
+void glInterfaceSecondaryColor (GLint red, GLint green, GLint blue)
+{
+	glSecondaryColor3i(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLint *v)
+{
+	glSecondaryColor3iv(v);
+}
+
+void glInterfaceSecondaryColor (GLshort red, GLshort green, GLshort blue)
+{
+	glSecondaryColor3s(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLshort *v)
+{
+	glSecondaryColor3sv(v);
+}
+
+void glInterfaceSecondaryColor (GLubyte red, GLubyte green, GLubyte blue)
+{
+	glSecondaryColor3ub(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLubyte *v)
+{
+	glSecondaryColor3ubv(v);
+}
+
+void glInterfaceSecondaryColor (GLuint red, GLuint green, GLuint blue)
+{
+	glSecondaryColor3ui(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLuint *v)
+{
+	glSecondaryColor3uiv(v);
+}
+
+void glInterfaceSecondaryColor (GLushort red, GLushort green, GLushort blue)
+{
+	glSecondaryColor3us(red, green, blue);
+}
+
+void glInterfaceSecondaryColor (const GLushort *v)
+{
+	glSecondaryColor3usv(v);
+}
+
+void glInterfaceSecondaryColorPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer)
+{
+	glSecondaryColorPointer(size, type, stride, pointer);
+}
+
+void glInterfacePointParameter (GLenum pname, GLfloat param)
+{
+	glPointParameterf(pname, param);
+}
+
+void glInterfacePointParameter (GLenum pname, const GLfloat *params)
+{
+	glPointParameterfv(pname, params);
+}
+
+void glInterfacePointParameter (GLenum pname, GLint param)
+{
+	glPointParameteri(pname, param);
+}
+
+void glInterfacePointParameter (GLenum pname, const GLint *params)
+{
+	glPointParameteriv(pname, params);
+}
+
+void glInterfaceBlendFuncSeparate (GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
+{
+	glBlendFuncSeparate(srcRGB, dstRGB, srcAlpha, dstAlpha);
+}
+
+void glInterfaceMultiDrawArrays (GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount)
+{
+	glMultiDrawArrays(mode, first, count, primcount);
+}
+
+void glInterfaceMultiDrawElements (GLenum mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei primcount)
+{
+	glMultiDrawElements(mode, count, type, indices, primcount);
+}
+
+void glInterfaceWindowPos (GLdouble x, GLdouble y)
+{
+	glWindowPos2d(x, y);
+}
+
+void glInterfaceWindowPos (const GLdouble *v)
+{
+	glWindowPos2dv(v);
+}
+
+void glInterfaceWindowPos (GLfloat x, GLfloat y)
+{
+	glWindowPos2f(x, y);
+}
+
+void glInterfaceWindowPos (const GLfloat *v)
+{
+	glWindowPos2fv(v);
+}
+
+void glInterfaceWindowPos (GLint x, GLint y)
+{
+	glWindowPos2i(x, y);
+}
+
+void glInterfaceWindowPos (const GLint *v)
+{
+	glWindowPos2iv(v);
+}
+
+void glInterfaceWindowPos (GLshort x, GLshort y)
+{
+	glWindowPos2s(x, y);
+}
+
+void glInterfaceWindowPos (const GLshort *v)
+{
+	glWindowPos2sv(v);
+}
+
+void glInterfaceWindowPos (GLdouble x, GLdouble y, GLdouble z)
+{
+	glWindowPos3d(x, y, z);
+}
+
+void glInterfaceWindowPos3 (const GLdouble *v)
+{
+	glWindowPos3dv(v);
+}
+
+void glInterfaceWindowPos (GLfloat x, GLfloat y, GLfloat z)
+{
+	glWindowPos3f(x, y, z);
+}
+
+void glInterfaceWindowPos3 (const GLfloat *v)
+{
+	glWindowPos3fv(v);
+}
+
+void glInterfaceWindowPos (GLint x, GLint y, GLint z)
+{
+	glWindowPos3i(x, y, z);
+}
+
+void glInterfaceWindowPos3 (const GLint *v)
+{
+	glWindowPos3iv(v);
+}
+
+void glInterfaceWindowPos (GLshort x, GLshort y, GLshort z)
+{
+	glWindowPos3s(x, y, z);
+}
+
+void glInterfaceWindowPos3 (const GLshort *v)
+{
+	glWindowPos3sv(v);
+}
+
+void glInterfaceGenQueries (GLsizei n, GLuint *ids)
+{
+	glGenQueries(n, ids);
+}
+
+void glInterfaceDeleteQueries (GLsizei n, const GLuint *ids)
+{
+	glDeleteQueries(n, ids);
+}
+
+GLboolean glInterfaceIsQuery (GLuint id)
+{
+	return glIsQuery(id);	
+}
+
+void glInterfaceBeginQuery (GLenum target, GLuint id)
+{
+	glBeginQuery(target, id);
+}
+
+void glInterfaceEndQuery (GLenum target)
+{
+	glEndQuery(target);
+}
+
+void glInterfaceGetQuery (GLenum target, GLenum pname, GLint *params)
+{
+	glGetQueryiv(target, pname, params);
+}
+
+void glInterfaceGetQueryObject (GLuint id, GLenum pname, GLint *params)
+{
+	glGetQueryObjectiv(id, pname, params);
+}
+
+void glInterfaceGetQueryObject (GLuint id, GLenum pname, GLuint *params)
+{
+	glGetQueryObjectuiv(id, pname, params);
+}
+
+void glInterfaceBindBuffer (GLenum target, GLuint buffer)
+{
+	glBindBuffer(target, buffer);
+}
+
+void glInterfaceDeleteBuffers (GLsizei n, const GLuint *buffers)
+{
+	glDeleteBuffers(n, buffers);
+}
+
+void glInterfaceGenBuffers (GLsizei n, GLuint *buffers)
+{
+	glGenBuffers(n, buffers);
+}
+
+GLboolean glInterfaceIsBuffer (GLuint buffer)
+{
+	return glIsBuffer(buffer);
+}
+
+void glInterfaceBufferData (GLenum target, GLsizeiptr size, const GLvoid *data, GLenum usage)
+{
+	glBufferData(target, size, data, usage);
+}
+
+void glInterfaceBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid *data)
+{
+	glBufferSubData(target, offset, size, data);
+}
+
+void glInterfaceGetBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, GLvoid *data)
+{
+	glGetBufferSubData(target, offset, size, data);
+}
+
+GLvoid *glInterfaceMapBuffer (GLenum target, GLenum access)
+{
+	return glMapBuffer(target, access);
+}
+
+GLboolean glInterfaceUnmapBuffer (GLenum target)
+{
+	return glUnmapBuffer(target);
+}
+
+void glInterfaceGetBufferParameteriv (GLenum target, GLenum pname, GLint *params)
+{
+	glGetBufferParameteriv(target, pname, params);
+}
+
+void glInterfaceGetBufferPointerv (GLenum target, GLenum pname, GLvoid **params)
+{
+	glGetBufferPointerv(target, pname, params);
+}
+
+void glInterfaceDrawBuffers (GLsizei n, const GLenum *bufs)
+{
+	glDrawBuffers(n, bufs);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLdouble x)
+{
+	glVertexAttrib1d(index, x);
+}
+
+void glInterfaceVertexAttrib (GLuint index, const GLdouble *v)
+{
+	glVertexAttrib1dv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLfloat x)
+{
+	glVertexAttrib1f(index, x);
+}
+
+void glInterfaceVertexAttrib (GLuint index, const GLfloat *v)
+{
+	glVertexAttrib1fv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLshort x)
+{
+	glVertexAttrib1s(index, x);
+}
+
+void glInterfaceVertexAttrib (GLuint index, const GLshort *v)
+{
+	glVertexAttrib1sv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLdouble x, GLdouble y)
+{
+	glVertexAttrib2d(index, x, y);
+}
+
+void glInterfaceVertexAttrib2 (GLuint index, const GLdouble *v)
+{
+    glVertexAttrib2dv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLfloat x, GLfloat y)
+{
+	glVertexAttrib2f(index, x, y);
+}
+
+void glInterfaceVertexAttrib2 (GLuint index, const GLfloat *v)
+{
+	glVertexAttrib2fv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLshort x, GLshort y)
+{
+	glVertexAttrib2s(index, x, y);
+}
+
+void glInterfaceVertexAttrib2 (GLuint index, const GLshort *v)
+{
+	glVertexAttrib2sv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLdouble x, GLdouble y, GLdouble z)
+{
+	glVertexAttrib3d(index, x, y, z);
+}
+
+void glInterfaceVertexAttrib3 (GLuint index, const GLdouble *v)
+{
+	glVertexAttrib3dv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLfloat x, GLfloat y, GLfloat z)
+{
+	glVertexAttrib3f(index, x, y, z);
+}
+
+void glInterfaceVertexAttrib3 (GLuint index, const GLfloat *v)
+{
+	glVertexAttrib3fv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLshort x, GLshort y, GLshort z)
+{
+	glVertexAttrib3s(index, x, y, z);
+}
+
+void glInterfaceVertexAttrib3 (GLuint index, const GLshort *v)
+{
+	glVertexAttrib3sv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLbyte *v)
+{
+	glVertexAttrib4Nbv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLint *v)
+{
+	glVertexAttrib4Niv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLshort *v)
+{
+	glVertexAttrib4Nsv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w)
+{
+	glVertexAttrib4Nub(index, x, y, z, w);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLubyte *v)
+{
+	glVertexAttrib4Nubv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLuint *v)
+{
+	glVertexAttrib4Nuiv(index, v);
+}
+
+void glInterfaceVertexAttrib4N (GLuint index, const GLushort *v)
+{
+	glVertexAttrib4Nusv(index, v);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLbyte *v)
+{
+	glVertexAttrib4bv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+{
+	glVertexAttrib4d(index, x, y, z, w);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLdouble *v)
+{
+	glVertexAttrib4dv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+{
+	glVertexAttrib4f(index, x, y, z, w);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLfloat *v)
+{
+	glVertexAttrib4fv(index, v);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLint *v)
+{
+	glVertexAttrib4iv(index, v);
+}
+
+void glInterfaceVertexAttrib (GLuint index, GLshort x, GLshort y, GLshort z, GLshort w)
+{
+	glVertexAttrib4s(index, x, y, z, w);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLshort *v)
+{
+	glVertexAttrib4sv(index, v);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLubyte *v)
+{
+	glVertexAttrib4ubv(index, v);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLuint *v)
+{
+	glVertexAttrib4uiv(index, v);
+}
+
+void glInterfaceVertexAttrib4 (GLuint index, const GLushort *v)
+{
+	glVertexAttrib4usv(index, v);
+}
+
+void glInterfaceVertexAttribPointer (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer)
+{
+	glVertexAttribPointer(index, size, type, normalized, stride, pointer);
+}
+
+void glInterfaceEnableVertexAttribArray (GLuint index)
+{
+	glEnableVertexAttribArray(index);
+}
+
+void glInterfaceDisableVertexAttribArray (GLuint index)
+{
+	glDisableVertexAttribArray(index);
+}
+
+void glInterfaceGetVertexAttrib (GLuint index, GLenum pname, GLdouble *params)
+{
+	glGetVertexAttribdv(index, pname, params);
+}
+
+void glInterfaceGetVertexAttrib (GLuint index, GLenum pname, GLfloat *params)
+{
+	glGetVertexAttribfv(index, pname, params);
+}
+
+void glInterfaceGetVertexAttrib (GLuint index, GLenum pname, GLint *params)
+{
+	glGetVertexAttribiv(index, pname, params);
+}
+
+void glInterfaceGetVertexAttribPointerv (GLuint index, GLenum pname, GLvoid **pointer)
+{
+	glGetVertexAttribPointerv(index, pname, pointer);
+}
+
+void glInterfaceDeleteShader (GLuint shader)
+{
+	glDeleteShader(shader);
+}
+
+void glInterfaceDetachShader (GLuint program, GLuint shader)
+{
+	glDetachShader(program, shader);
+}
+
+GLuint glInterfaceCreateShader (GLenum type)
+{
+	return glCreateShader(type);
+}
+
+void glInterfaceShaderSource (GLuint shader, GLsizei count, const GLchar* const *string, const GLint *length)
+{
+	glShaderSource(shader, count, string, length);
+}
+
+void glInterfaceCompileShader (GLuint shader)
+{
+	glCompileShader(shader);
+}
+
+GLuint glInterfaceCreateProgram (void)
+{
+	return glCreateProgram();
+}
+
+void glInterfaceAttachShader (GLuint program, GLuint shader)
+{
+	glAttachShader(program, shader);
+}
+
+void glInterfaceLinkProgram (GLuint program)
+{
+	glLinkProgram(program);
+}
+
+void glInterfaceUseProgram (GLuint program)
+{
+	glUseProgram(program);
+}
+
+void glInterfaceDeleteProgram (GLuint program)
+{
+	glDeleteProgram(program);
+}
+
+void glInterfaceValidateProgram (GLuint program)
+{
+	glValidateProgram(program);
+}
+
+void glInterfaceUniform (GLint location, GLfloat v0)
+{
+	glUniform1f(location, v0);
+}
+
+void glInterfaceUniform (GLint location, GLfloat v0, GLfloat v1)
+{
+	glUniform2f(location, v0, v1);
+}
+
+void glInterfaceUniform (GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
+{
+	glUniform3f(location, v0, v1, v2);
+}
+
+void glInterfaceUniform (GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
+{
+	glUniform4f(location, v0, v1, v2, v3);
+}
+
+void glInterfaceUniform (GLint location, GLint v0)
+{
+	glUniform1i(location, v0);
+}
+
+void glInterfaceUniform (GLint location, GLint v0, GLint v1)
+{
+	glUniform2i(location, v0, v1);
+}
+
+void glInterfaceUniform (GLint location, GLint v0, GLint v1, GLint v2)
+{
+	glUniform3i(location, v0, v1, v2);
+}
+
+void glInterfaceUniform (GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
+{
+	glUniform4i(location, v0, v1, v2, v3);
+}
+
+void glInterfaceUniform (GLint location, GLsizei count, const GLfloat *value)
+{
+	glUniform1fv(location, count, value);
+}
+
+void glInterfaceUniform2 (GLint location, GLsizei count, const GLfloat *value)
+{
+	glUniform2fv(location, count, value);
+}
+
+void glInterfaceUniform3 (GLint location, GLsizei count, const GLfloat *value)
+{
+	glUniform3fv(location, count, value);
+}
+
+void glInterfaceUniform4 (GLint location, GLsizei count, const GLfloat *value)
+{
+	glUniform4fv(location, count, value);
+}
+
+void glInterfaceUniform (GLint location, GLsizei count, const GLint *value)
+{
+	glUniform1iv(location, count, value);
+}
+
+void glInterfaceUniform2 (GLint location, GLsizei count, const GLint *value)
+{
+	glUniform2iv(location, count, value);
+}
+
+void glInterfaceUniform3 (GLint location, GLsizei count, const GLint *value)
+{
+	glUniform3iv(location, count, value);
+}
+
+void glInterfaceUniform4 (GLint location, GLsizei count, const GLint *value)
+{
+	glUniform4iv(location, count, value);
+}
+
+void glInterfaceUniformMatrix2 (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix2fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix3 (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix3fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix4 (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix4fv(location, count, transpose, value);
+}
+
+GLboolean glInterfaceIsShader (GLuint shader)
+{
+	return glIsShader(shader);
+}
+
+GLboolean glInterfaceIsProgram (GLuint program)
+{
+	return glIsProgram(program);
+}
+
+void glInterfaceGetShaderiv (GLuint shader, GLenum pname, GLint *params)
+{
+	glGetShaderiv(shader, pname, params);
+}
+
+void glInterfaceGetProgramiv (GLuint program, GLenum pname, GLint *params)
+{
+	glGetProgramiv(program, pname, params);
+}
+
+void glInterfaceGetAttachedShaders (GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)
+{
+	glGetAttachedShaders(program, maxCount, count, shaders);
+}
+
+void glInterfaceGetShaderInfoLog (GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *infoLog)
+{
+	glGetShaderInfoLog(shader, bufSize, length, infoLog);
+}
+
+GLint glInterfaceGetUniformLocation (GLuint program, const GLchar *name)
+{
+	return glGetUniformLocation(program, name);
+}
+
+void glInterfaceGetActiveUniform (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
+{
+	glGetActiveUniform(program, index, bufSize, length, size, type, name);
+}
+
+void glInterfaceGetUniform (GLuint program, GLint location, GLfloat *params)
+{
+	glGetUniformfv(program, location, params);
+}
+
+void glInterfaceGetUniform (GLuint program, GLint location, GLint *params)
+{
+	glGetUniformiv(program, location, params);
+}
+
+void glInterfaceGetShaderSource (GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source)
+{
+	glGetShaderSource(shader, bufSize, length, source);
+}
+
+void glInterfaceBindAttribLocation (GLuint program, GLuint index, const GLchar *name)
+{
+	glBindAttribLocation(program, index, name);
+}
+
+void glInterfaceGetActiveAttrib (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name)
+{
+	glGetActiveAttrib(program, index, bufSize, length, size, type, name);
+}
+
+GLint glInterfaceGetAttribLocation (GLuint program, const GLchar *name)
+{
+	return glGetAttribLocation(program, name);
+}
+
+void glInterfaceStencilFuncSeparate (GLenum face, GLenum func, GLint ref, GLuint mask)
+{
+	glStencilFuncSeparate(face, func, ref, mask);
+}
+
+void glInterfaceStencilOpSeparate (GLenum face, GLenum fail, GLenum zfail, GLenum zpass)
+{
+	glStencilOpSeparate(face, fail, zfail, zpass);
+}
+
+void glInterfaceStencilMaskSeparate (GLenum face, GLuint mask)
+{
+	glStencilMaskSeparate(face, mask);
+}
+
+void glInterfaceUniformMatrix2x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix2x3fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix3x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix3x2fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix2x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix2x4fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix4x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix4x2fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix3x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix3x4fv(location, count, transpose, value);
+}
+
+void glInterfaceUniformMatrix4x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+{
+	glUniformMatrix4x3fv(location, count, transpose, value);
+}
