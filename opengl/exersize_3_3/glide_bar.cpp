@@ -4,6 +4,7 @@ int width = 600;
 int height = 600;
 int slidheight = 20;
 GLfloat colors[4] = {1, 1, 1, 1};
+bool mouseLeftDown = false;
 class SlidBar
 {
 private:
@@ -167,12 +168,30 @@ void init()
 
 void mouse(int button, int state, int x, int y)
 {
-	if (state == GLUT_DOWN&&button==GLUT_LEFT_BUTTON)
+	if (button == GLUT_LEFT_BUTTON)
+	{
+		if (state == GLUT_DOWN)
+		{
+			mouseLeftDown = true;
+		}
+		else if (state == GLUT_UP)
+		{
+			mouseLeftDown = false;
+		}
+	}
+}
+
+void mouseMotionCB(int x, int y)
+{
+	if (mouseLeftDown)
 	{
 		printf("x:%d,y:%d\n", x, y);
 		if(test1.TouchTest(x, height-y))
 		{
-			colors[0] = test1.GetValue();
+			GLdouble value = test1.GetValue();
+			colors[0] = value > 0.5?1:0;
+			colors[1] = (value > 0.25 && value < 0.5) || (value > 0.75 && value < 1)?1:0;
+			colors[2] = (value > 0.125 && value < 0.25) || (value > 0.375 && value < 0.5) || (value > 0.625 && value < 0.75) || (value > 0.875 && value < 1) ? 1:0;
 		}
 	}
 	glutPostRedisplay();
@@ -190,6 +209,7 @@ int main(int argc, char**argv)
 	init();
 	glutDisplayFunc(myDisplay);
 	glutMouseFunc(mouse);
+	glutMotionFunc(mouseMotionCB);
 	glutMainLoop();
 	return 0;
 }
