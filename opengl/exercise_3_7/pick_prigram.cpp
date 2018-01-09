@@ -2,9 +2,32 @@
 #include <stdio.h>
 #include <GLUT/glut.h>
 
+float width = 200.0f;
+float height = 200.0f;
 void init()
 {
 	glClearColor(0.0,0.0,0.0,0.0);
+}
+
+void drawChess()
+{
+
+}
+
+void drawChessBoard()
+{
+	bool flag = true;
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 8; j++) {
+			if (flag) {
+				glColor3f(1.0,1.0,1.0);
+			}
+			else {
+				glColor3f(0.0,0.0,0.0);
+			}
+			glRectf();
+		}
+	}
 }
 
 void drawObjects(GLenum mode)
@@ -83,7 +106,7 @@ void reshape(int w, int h)
 	glViewport(0,0,w,h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluOrtho2D(-2.0, 2.0, -2.0, 2.0);
+	gluOrtho2D(-width/2, width/2, -height/2, height/2);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 }
