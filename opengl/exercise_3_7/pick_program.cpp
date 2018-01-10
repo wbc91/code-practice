@@ -11,21 +11,24 @@ void init()
 
 void drawChess()
 {
-
+	
 }
 
 void drawChessBoard()
 {
-	bool flag = true;
+	bool flag = false;
 	for (int i = 0; i < 8; i++) {
+		flag = !flag;
 		for (int j = 0; j < 8; j++) {
 			if (flag) {
 				glColor3f(1.0,1.0,1.0);
+				flag = false;
 			}
 			else {
 				glColor3f(0.0,0.0,0.0);
+				flag = true;
 			}
-			glRectf();
+			glRectf(-width/2+j*width/8, height/2 - (i+1)*height/8, -width/2 + (j+1)*width/8, height/2 - i*height/8);
 		}
 	}
 }
@@ -43,7 +46,8 @@ void drawObjects(GLenum mode)
 void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	drawObjects(GL_RENDER);
+	// drawObjects(GL_RENDER);
+	drawChessBoard();
 	glFlush();
 }
 
